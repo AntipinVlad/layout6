@@ -1,0 +1,100 @@
+ul,li{
+    
+}
+.text-red{
+    color:#fa9179;
+}
+/* header style */
+.header{
+    background: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+.header__logo{
+    border: 3px solid #6e6e6e; 
+}
+.header-content{
+    margin-top: 130px;
+    color: #6e6e6e
+}
+.btn{
+    background-color: #ff5c36;
+    border-color: #ff5c36;
+    color: #fff;
+    outline: none;
+}
+/* Для info btn что бы убрать мерцание принажатии
+
+.btn:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #f74770;
+    border-color: #f74770; 
+} 
+*/ 
+.btn:hover{
+    background: #f74770;
+    border-color: #f74770;
+    color: #fff;
+} 
+.btn:active{
+    background-color: #ff5c36;
+} 
+.btn:focus {
+    box-shadow: none;
+}   
+.form{
+    margin-top: 90px;
+    border-radius: 15px;
+}
+.shadow{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+.form-group{
+    background: #fff;
+}
+.btn-primary{
+    background-color: #fa9179;
+    border: #fa9179;
+}
+.btn-primary:hover{
+    background-color: #271317
+}
+/* Main */
+.main{
+    background: #fff;
+}
+.main__title{
+    margin-top: 100px;
+}
+.main__desc{
+    color: #6e6e6e; 
+}
+.vr-card{
+    color: #fff;
+    margin-top: 90px; 
+    margin-bottom: 20px;
+}
+.vr-card__item{
+   padding: 0 20px;
+   width: 30%;
+   padding-bottom: 35px;
+   margin-bottom: 30px;
+}
+.vr-card__item:first-child{
+    background-color: #4eb2f7;
+
+}
+.vr-card__item:nth-child(2){
+    background-color: #c049f8;
+
+}
+.vr-card__item:nth-child(3){
+    background-color: #817eff;
+
+}
+.vr-card__item:nth-child(4){
+    background-color: #f74770;
+}
+.pos{
+    margin: 15px 0 0 -58px;
+}
