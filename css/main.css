@@ -1,3 +1,4 @@
+/* Сommon styles */
 
 a {
     color: #ff5c36;
@@ -5,11 +6,33 @@ a {
 
 a:hover {
     color: #817f7e;
-    /* color: #c049f8; */
 }
 
 .text-red {
     color: #fa9179;
+}
+
+/* Button style */
+
+.btn {
+    background-color: #ff5c36;
+    border-color: #ff5c36;
+    color: #fff;
+    outline: none;
+}
+
+.btn:hover {
+    background: #f74770;
+    border-color: #f74770;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: #ff5c36;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 /* header style */
@@ -28,13 +51,6 @@ a:hover {
     color: #6e6e6e
 }
 
-.btn {
-    background-color: #ff5c36;
-    border-color: #ff5c36;
-    color: #fff;
-    outline: none;
-}
-
 /* Для info btn что бы убрать мерцание принажатии
 
 .btn:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
@@ -44,23 +60,11 @@ a:hover {
 } 
 */
 
+/* Indent in the field "Your message" in the form */
+
 .padding-mes {
     padding-top: 20px;
     padding-bottom: 100px;
-}
-
-.btn:hover {
-    background: #f74770;
-    border-color: #f74770;
-    color: #fff;
-}
-
-.btn:active {
-    background-color: #ff5c36;
-}
-
-.btn:focus {
-    box-shadow: none;
 }
 
 .form {
@@ -130,10 +134,13 @@ a:hover {
     background-color: #f74770;
 }
 
-.pos {
-    /* margin: 15px 0 0 -58px; */
+/* Offset buttons on the cards */
+
+.button-position {
     top: 50px;
 }
+
+/* Іndent for sections */
 
 .item-p {
     padding-top: 100px;
@@ -159,6 +166,8 @@ a:hover {
     color: #000000;
     border: 2px solid #000000;
 }
+
+/* Shadow for cards with pictures by pressing and hovering */
 
 .link-action:hover {
     box-shadow: 0px 0px 23px 0px #ff5c36;
@@ -191,8 +200,14 @@ a:hover {
     padding: 2px;
 }
 
+/* Padding card */
+
 .skills-card p {
     margin: 1em 0 0;
+}
+
+.tc_employee_position {
+    font-size: 17px;
 }
 
 .card-style {
@@ -200,15 +215,13 @@ a:hover {
     margin: 0;
 }
 
-.tc_employee_position {
-    font-size: 17px;
-}
-
 .hov-im {
     opacity: 0;
     transition: all 2s;
 }
-/* backgraund карточки скилов */
+
+/* backgraund skill card */
+
 .face1 {
     background-image: url(../img/face1.jpg);
     background-size: cover;
@@ -223,13 +236,17 @@ a:hover {
     background-image: url(../img/face3.jpg);
     background-size: cover;
 }
-/* Позиционирование смещенной карточки */
+
+/* Positional Offset Map */
+
 .position-name {
     width: 200px;
     top: 350px;
     transition: all 3s;
 }
-/* Переходы при наведении на корточку */
+
+/* Smooth card transition */
+
 .animation-name:hover .position-name {
     top: 0px;
     background: none;
@@ -241,16 +258,20 @@ a:hover {
     box-shadow: 0px 0px 20px 0px #f74770;
     transition: all 1s;
 }
-/* Картинка карточки в карусели */
+
 .position-img {
     top: 20px;
 }
-/* Цвет переключателей */
+
+/* Switch Color */
+
 .carousel-indicators li {
     background-color: #ff5c36;
     opacity: .3
 }
-/* Цвет стрелок карточки */
+
+/* Carousel arrows color */
+
 .carousel-control-prev {
     background: #ff5c36;
     width: 40px;
