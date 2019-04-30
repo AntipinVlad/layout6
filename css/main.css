@@ -1,5 +1,6 @@
 /* Сommon styles */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 a {
     color: #ff5c36;
 }
@@ -100,11 +101,11 @@ a:hover {
     padding-bottom: 100px;
 }
 
-.main__title {
+.main-content__title {
     margin-top: 100px;
 }
 
-.main__desc {
+.main-content__desc {
     color: #6e6e6e;
 }
 
@@ -113,25 +114,28 @@ a:hover {
     margin-top: 90px;
 }
 
-.vr-card__item {
+.vr-card__item_blue {
+    background-color: #4eb2f7;
     padding: 0 20px;
     padding-bottom: 35px;
 }
 
-.vr-card__item {
-    background-color: #4eb2f7;
-}
-
-.two {
+.vr-card__item_violet {
     background-color: #c049f8;
+    padding: 0 20px;
+    padding-bottom: 35px;
 }
 
-.three {
+.vr-card__item_dark-blue {
     background-color: #817eff;
+    padding: 0 20px;
+    padding-bottom: 35px;
 }
 
-.four {
+.vr-card__item_pink {
     background-color: #f74770;
+    padding: 0 20px;
+    padding-bottom: 35px;
 }
 
 /* Offset buttons on the cards */
@@ -142,7 +146,7 @@ a:hover {
 
 /* Іndent for sections */
 
-.item-p {
+.item-padding {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -215,7 +219,7 @@ a:hover {
     margin: 0;
 }
 
-.hov-im {
+.hover-image {
     opacity: 0;
     transition: all 2s;
 }
@@ -253,7 +257,7 @@ a:hover {
     transition: all 4s;
 }
 
-.hov-im:hover {
+.hover-image:hover {
     opacity: 1;
     box-shadow: 0px 0px 20px 0px #f74770;
     transition: all 1s;
@@ -288,6 +292,6 @@ a:hover {
     top: 50%;
 }
 
-.ocenka {
+.gold_star {
     color: gold;
 }
