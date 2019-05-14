@@ -1,0 +1,235 @@
+// Common style
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
+$orange-color: #ff5c36;
+$pink-color: #f74770;
+$gray-color: #f5f5f5;
+
+@mixin item-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@mixin skill-line_style {
+  background: $orange-color;
+  padding: 2px;
+}
+@mixin card-padding {
+  padding: 0 20px;
+  padding-bottom: 35px;
+}
+
+@mixin btn-style {
+  background-color: $orange-color;
+  border-color: $orange-color;
+  color: #fff;
+  outline: none;
+  &:hover {
+    background: $pink-color;
+    border-color: $pink-color;
+    color: #fff;
+  }
+  &:active {
+    background-color: $orange-color;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+a {
+  color: $orange-color;
+  &:hover {
+    color: #817f7e;
+  }
+}
+.text-red {
+  color: #fa9179;
+}
+
+// Button style
+
+.btn {
+  @include btn-style();
+}
+
+// Header style
+
+.header {
+  background: $gray-color;
+  font-family: "Open Sans", sans-serif;
+  .header__logo {
+    border: 3px solid #6e6e6e;
+  }
+  .header-content {
+    margin-top: 130px;
+    color: #6e6e6e;
+  }
+  .form {
+    margin-top: 90px;
+    border-radius: 15px;
+    .form-group {
+      background: #fff;
+    }
+    .shadow {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      .padding-mes {
+        padding-top: 20px;
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+
+// Main
+
+main {
+  .main-content {
+    @include item-padding();
+    .main-content__desc {
+      color: #6e6e6e;
+    }
+  }
+  .vr-card {
+    color: #fff;
+    margin-top: 90px;
+    .vr-card__item_blue {
+      background-color: #4eb2f7;
+      @include card-padding();
+    }
+    .vr-card__item_violet {
+      background-color: #c049f8;
+      @include card-padding();
+    }
+    .vr-card__item_dark-blue {
+      background-color: #817eff;
+      @include card-padding();
+    }
+    .vr-card__item_pink {
+      background-color: #f74770;
+      @include card-padding();
+    }
+    /* Offset buttons on the cards */
+    .button-position {
+      top: 50px;
+    }
+  }
+  /* Іndent for sections */
+  .img-container {
+    background: #fbfbfb;
+    @include item-padding();
+    /* Shadow for cards with pictures by pressing and hovering */
+    .link-action {
+      &:hover {
+        box-shadow: 0px 0px 23px 0px $orange-color;
+      }
+      &:active {
+        box-shadow: 0px 0px 23px 0px $pink-color;
+      }
+    }
+  }
+  .service {
+    @include item-padding();
+    .line {
+      width: 10%;
+      height: 3px;
+      background: $orange-color;
+    }
+    .service-btn {
+      background: #fff;
+      color: #000000;
+      border: 2px solid #000000;
+    }
+  }
+
+  .skills-card {
+    // background-color: $gray-color;
+    p {
+      margin: 1em 0 0;
+    }
+    .card-deck {
+      /* backgraund skill card */
+      .face1 {
+        background-image: url(../img/face1.jpg);
+        background-size: cover;
+      }
+      .face2 {
+        background-image: url(../img/face2.jpg);
+        background-size: cover;
+      }
+      .face3 {
+        background-image: url(../img/face3.jpg);
+        background-size: cover;
+      }
+      /* Positional Offset Map */
+      .position-name {
+        width: 200px;
+        top: 350px;
+        transition: all 3s;
+      }
+      /* Smooth card transition */
+      .animation-name {
+        &:hover .position-name {
+          top: 0px;
+          background: none;
+          transition: all 4s;
+        }
+      }
+      .hover-image {
+        opacity: 0;
+        transition: all 2s;
+        &:hover {
+          opacity: 1;
+          box-shadow: 0px 0px 20px 0px $pink-color;
+          transition: all 1s;
+        }
+        .skill-line {
+          background: #817f7e;
+          width: 65%;
+          .des-line {
+            width: 80%;
+            @include skill-line_style();
+          }
+          .eng-line {
+            width: 70%;
+            @include skill-line_style();
+          }
+          .com-line {
+            width: 75%;
+            @include skill-line_style();
+          }
+        }
+        .tc_employee_position {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  .clients {
+    @include item-padding();
+    /* Switch Color */
+    .carousel-indicators li {
+      background-color: $orange-color;
+      opacity: 0.3;
+    }
+    .gold_star {
+      color: gold;
+    }
+    /* Carousel arrows color */
+    .carousel-control-prev {
+      background: $orange-color;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      top: 50%;
+    }
+    .carousel-control-next {
+      background: $orange-color;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      top: 50%;
+    }
+  }
+}
