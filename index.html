@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Smart </title>
 </head>
@@ -57,17 +58,17 @@
                                 <p><span class="text-red ">Send</span> A Message</p>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" class="form-control" id='userName' placeholder="Your name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" id='userEmail' placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control padding-mes" placeholder="Your message">
+                                <textarea  type="text" class="form-control " id='userMessage' placeholder="Your message" rows="5"></textarea>
                             </div>
                             <div class="row">
                                 <div class="col-lg-8 mx-auto d-flex flex-row justify-content-center">
-                                    <button type="submit" class="btn shadow rounded-pill  ">Send Message</button>
+                                    <button  class="btn shadow rounded-pill submitButton">Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +90,7 @@
                 </div>
                 <!-- Content Cards -->
                 <section class="vr-card">
-                    <div class="row card-deck ">
+                    <div class="row card-deck " style="display: none">
                         <div class="col-lg-3 col-md-6 mb-5 ">
                             <!-- Content -->
                             <div class="card text-center m-0 vr-card__item_blue">
@@ -133,6 +134,9 @@
                             </div>
                         </div>
                     </div>
+                    <span class=" d-flex flex-row mx-auto justify-content-center">
+                        <button type="button" class="btn btn-primary button-deck col-5">Read more...</button>
+                    </span>
                 </section>
             </div>
         </section>
@@ -342,8 +346,8 @@
                                 <!-- Card size on the carousel -->
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
                                     <!-- Img card -->
-                                    <img src="./img/face1.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face1.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <!-- Card content -->
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
@@ -360,8 +364,8 @@
                                     </div>
                                 </div>
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
-                                    <img src="./img/face2.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face2.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
                                             natural lead-in to additional content. This content is a little bit longer.
@@ -381,8 +385,8 @@
                         <div class="carousel-item">
                             <div class="card-deck text-center justify-content-around p-5">
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
-                                    <img src="./img/face3.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face3.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
                                             natural lead-in to additional content. This content is a little bit longer.
@@ -398,8 +402,8 @@
                                     </div>
                                 </div>
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
-                                    <img src="./img/face2.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face2.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
                                             natural lead-in to additional content. This content is a little bit longer.
@@ -419,8 +423,8 @@
                         <div class="carousel-item">
                             <div class="card-deck text-center justify-content-around p-5">
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
-                                    <img src="./img/face1.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face1.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
                                             natural lead-in to additional content. This content is a little bit longer.
@@ -436,8 +440,8 @@
                                     </div>
                                 </div>
                                 <div class="card" style="max-width: 25rem; min-width:15rem;">
-                                    <img src="./img/face3.jpg"
-                                        class="card-img-top mx-auto rounded-circle w-50 mt-2" alt="...">
+                                    <img src="./img/face3.jpg" class="card-img-top mx-auto rounded-circle w-50 mt-2"
+                                        alt="...">
                                     <div class="card-body">
                                         <p class="card-text">This is a wider card with supporting text below as a
                                             natural lead-in to additional content. This content is a little bit longer.
@@ -478,6 +482,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
